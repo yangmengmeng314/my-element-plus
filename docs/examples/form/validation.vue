@@ -72,7 +72,7 @@
     </el-form-item>
     <el-form-item label="Resources" prop="resource">
       <el-radio-group v-model="ruleForm.resource">
-        <el-radio value="Sponsorship">Sponsorship</el-radio>
+        <!-- <el-radio value="Sponsorship">Sponsorship</el-radio> -->
         <el-radio value="Venue">Venue</el-radio>
       </el-radio-group>
     </el-form-item>

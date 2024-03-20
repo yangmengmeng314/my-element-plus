@@ -5,6 +5,16 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    '// HomeSponsors': typeof import('./.vitepress/vitepress/components/home/home-sponsors.vue')['default']
+    '// RightBigLogoList': typeof import('./.vitepress/vitepress/components/sponsors/right-big-logo-list.vue')['default']
+    '// RightLogoSmallList': typeof import('./.vitepress/vitepress/components/sponsors/right-logo-small-list.vue')['default']
+    '// RightRichtextList': typeof import('./.vitepress/vitepress/components/sponsors/right-richtext-list.vue')['default']
+    '// SponsorList': typeof import('./.vitepress/vitepress/components/home/sponsor-list.vue')['default']
+    '// SponsorsButton': typeof import('./.vitepress/vitepress/components/sponsors/sponsors-button.vue')['default']
+    '// VpFooter': typeof import('./.vitepress/vitepress/components/globals/vp-footer.vue')['default']
+    '// VpSponsorLarge': typeof import('./.vitepress/vitepress/components/vp-sponsor-large.vue')['default']
+    '// VpSponsors': typeof import('./.vitepress/vitepress/components/vp-sponsors.vue')['default']
+    '// VpSponsorSmall': typeof import('./.vitepress/vitepress/components/vp-sponsor-small.vue')['default']
     A11yTag: typeof import('./.vitepress/vitepress/components/dev/a11y-tag.vue')['default']
     AxureComponentsSvg: typeof import('./.vitepress/vitepress/components/globals/resources/axure-components-svg.vue')['default']
     BackToTop: typeof import('./.vitepress/vitepress/components/icons/back-to-top.vue')['default']

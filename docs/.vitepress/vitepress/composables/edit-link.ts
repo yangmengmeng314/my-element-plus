@@ -11,6 +11,7 @@ export function useEditLink() {
   const lang = useLang()
   const editLink = useLocale(editLinkLocale)
 
+  // 默认项目中是只有默认语言英文的源码，其他语言则不可变编辑
   const canEditSource = computed(() => {
     return lang.value === defaultLang
   })
@@ -46,8 +47,8 @@ export function useEditLink() {
   })
   const text = computed(() => {
     return canEditSource.value
-      ? editLink.value['edit-on-github']
-      : editLink.value['edit-on-crowdin']
+      ? editLink.value['edit-on-github'] // 默认语言
+      : editLink.value['edit-on-crowdin'] // 其他语言
   })
 
   return {

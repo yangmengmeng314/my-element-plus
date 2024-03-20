@@ -64,7 +64,7 @@
     </el-form-item>
     <el-form-item label="Resources">
       <el-radio-group v-model="sizeForm.resource">
-        <el-radio border value="Sponsor">Sponsor</el-radio>
+        <!-- <el-radio border value="Sponsor">Sponsor</el-radio> -->
         <el-radio border value="Venue">Venue</el-radio>
       </el-radio-group>
     </el-form-item>

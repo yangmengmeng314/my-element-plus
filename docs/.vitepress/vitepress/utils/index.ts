@@ -64,10 +64,14 @@ export function createGitHubUrl(
   folder = 'examples/',
   ext = '.vue'
 ) {
-  const base = isExternal(docsRepo)
-    ? docsRepo
-    : `https://github.com/${docsRepo}`
-  return `${base.replace(endingSlashRE, '')}/edit/${docsBranch}/${
+  // const base = isExternal(docsRepo)
+  //   ? docsRepo
+  //   : `https://github.com/${docsRepo}`
+  // return `${base.replace(endingSlashRE, '')}/edit/${docsBranch}/${
+  //   docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''
+  // }${folder || ''}${path}${ext || ''}`
+  // 跳转gitlab的编辑页
+  return `${docsRepo.replace(endingSlashRE, '')}/-/edit/${docsBranch}/${
     docsDir ? `${docsDir.replace(endingSlashRE, '')}/` : ''
   }${folder || ''}${path}${ext || ''}`
 }

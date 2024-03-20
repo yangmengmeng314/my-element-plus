@@ -50,7 +50,7 @@
     </el-form-item>
     <el-form-item label="Resources">
       <el-radio-group v-model="form.resource">
-        <el-radio value="Sponsor">Sponsor</el-radio>
+        <!-- <el-radio value="Sponsor">Sponsor</el-radio> -->
         <el-radio value="Venue">Venue</el-radio>
       </el-radio-group>
     </el-form-item>

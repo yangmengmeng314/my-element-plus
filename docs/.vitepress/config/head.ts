@@ -67,13 +67,13 @@ export const head: HeadConfig[] = [
   ],
 
   ['script', {}, fs.readFileSync(path.resolve(vpRoot, 'lang.js'), 'utf-8')],
-  [
-    'script',
-    {
-      async: 'true',
-      src: 'https://www.googletagmanager.com/gtag/js?id=UA-175337989-1',
-    },
-  ],
+  // [
+  //   'script',
+  //   {
+  //     async: 'true',
+  //     src: 'https://www.googletagmanager.com/gtag/js?id=UA-175337989-1',
+  //   },
+  // ],
   [
     'script',
     {},
@@ -116,18 +116,18 @@ gtag('config', 'UA-175337989-1');`,
       gtag('config', 'G-M74ZHEQ1M1');
     `,
   ],
-  [
-    'script',
-    {},
-    `(function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2894908,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
-  ],
+  // [
+  //   'script',
+  //   {},
+  //   `(function(h,o,t,j,a,r){
+  //     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  //     h._hjSettings={hjid:2894908,hjsv:6};
+  //     a=o.getElementsByTagName('head')[0];
+  //     r=o.createElement('script');r.async=1;
+  //     r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  //     a.appendChild(r);
+  // })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
+  // ],
   [
     'script',
     {

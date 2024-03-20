@@ -93,6 +93,14 @@ const transformVpScriptSetup = (code: string, append: Append) => {
   return code
 }
 
+// const _REPO_URL = REPO_URL.replace(//$/, '')
+// const GITHUB_BLOB_URL = `${_REPO_URL}/-/blob/${REPO_BRANCH}`
+// const GITHUB_TREE_URL = `${_REPO_URL}/-/tree/${REPO_BRANCH}`
+// const transformComponentMarkdown = () => {
+//   const docUrl = `${GITHUB_BLOB_URL}/${docsDirName}/${lang}/component/${componentId}.md`
+//   const componentUrl = `${GITHUB_TREE_URL}/packages/components/${componentId}`
+// }
+
 const GITHUB_BLOB_URL = `https://github.com/${REPO_PATH}/blob/${REPO_BRANCH}`
 const GITHUB_TREE_URL = `https://github.com/${REPO_PATH}/tree/${REPO_BRANCH}`
 const transformComponentMarkdown = (
